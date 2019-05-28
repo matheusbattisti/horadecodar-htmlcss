@@ -1,0 +1,592 @@
+/* geral */
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span {
+	margin: 0;
+	color: #666;
+}
+
+.container {
+	max-width: 1920px;
+	width: 100%;
+}
+
+/* header */
+header {
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
+}
+
+/* navbar */
+nav {
+	position: fixed;
+	top: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #FFF;
+	border-bottom: 1px solid #CCC;
+}
+
+nav:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.nav-container {
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+}
+
+.nav-container ul {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+
+.nav-container ul li {
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.nav-container li a {
+	text-decoration: none;
+	color: #666;
+	transition: .5s;
+}
+
+.nav-container li a:hover {
+	color: #3381f3;
+}
+
+/* banner */
+#main-banner {
+	background: url('../img/banner6.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;
+}
+
+#search-form {
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15em;
+	padding-bottom: 15em;
+	text-align: center;
+}
+
+#search-form h1 {
+	font-size: 40px;
+}
+
+#search-form p {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#search-form input, #search-form select {
+	background-color: #FFF;
+	border-radius: 5px;
+	border-color: transparent;
+	padding: 10px 20px;
+	font-size: 18px;
+	margin: 0 10px;
+}
+
+#search-form input[type=submit] {
+	background-color: #3381f3;
+	text-transform: uppercase;
+	color: #FFF;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#search-form input[type=submit]:hover {
+	background-color: #2B79EB;
+}
+
+/* seção de últimos empregos */
+#lastjobs-container {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#lastjobs-container h1 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#lastjobs-container ul {
+	padding: 0;
+	border: 1px solid #CCC;
+	border-radius: 10px;
+}
+
+#lastjobs-container ul li {
+	list-style: none;
+	text-align: left;
+	border-bottom: solid 1px #CCC;
+	height: 80px;
+	position: relative;
+}
+
+#lastjobs-container ul li:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+#lastjobs-container ul li:last-child {
+	border: none;
+}
+
+.clickarea {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* company img */
+.company-box {
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	padding-left: 1%;
+}
+
+.company-box img {
+	width: 100px;
+	margin-top: 2.5px;
+}
+
+.company-box .company-info {
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 10px;
+	text-align: left;
+	position: absolute;
+}
+
+.company-box .company-info h3 {
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.company-box .company-info p {
+	font-weight: bold;
+}
+
+/* company locality */
+.locality {
+	color: #6d6d6d;
+	display: inline-block;
+	width: 25%;
+	position: absolute;
+	height: 100%;
+	line-height: 80px;
+}
+
+.locality i, .locality p {
+	display: inline-block;
+}
+
+.locality i {
+	margin-right: 5px;
+}
+
+
+/* company job type */
+.job-type {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	padding-top: 30px;
+	right: 1%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #FFF;
+}
+
+.job-type span {
+	display: block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.clt {
+	background-color: #735fee;
+}
+
+.pj {
+	background-color: #5bbc2e;
+}
+
+.homeoffice {
+	background-color: #ff5a5f;
+}
+
+/* see more div */
+.btnjobs-container {
+	margin-top: 50px;
+}
+
+.btn-jobs {
+	text-transform: uppercase;
+	background-color: #FFF;
+	color: #3381f3;
+	border: 2px solid #3381f3;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.btn-jobs:hover {
+	background-color: #3381f3;
+	color: #FFF;
+}
+
+/* send jobs container */
+#sendjobs-container {
+	background: url('../img/banner2.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+
+#sendjobs-container h2, #sendjobs-container p {
+	width: 600px;
+	color: #FFF;
+}
+
+#sendjobs-container h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#sendjobs-container p {
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+.light-btn {
+	background-color: #FFF;
+	border: 2px solid #FFF;
+	color: #666;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.light-btn:hover {
+	background-color: transparent;
+	color: #FFF;
+}
+
+/* jobfinder status */
+#status-container {
+	text-align: center;
+	padding: 5em 0;
+}
+
+.title-center {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.p-center {
+	width: 80%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;
+}
+
+.status-box {
+	display: inline-block;
+	text-align: center;
+	width: 24.5%;
+	margin-top: 80px;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	height: 100px;
+}
+
+.status-box:nth-child(2) {
+	border: none;
+}
+
+.status-box:nth-child(3) {
+	border-right: none;
+}
+
+.status-qtd {
+	font-size: 36px;
+}
+
+.status-text {
+	font-size: 20px;
+}
+
+/* testmony container */
+#testmony-container {
+	background: url('../img/banner7.jpg') no-repeat;
+	background-size: cover;
+	padding: 10em 0;
+}
+
+#testmony-container h2, #testmony-container p {
+	color: #FFF;
+	text-align: center;
+}
+
+#testmony-container h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#testmony-container p {
+	margin-bottom: 50px;
+}
+
+.testmony-box {
+	display: inline-block;
+	width: 24.5%;
+	text-align: center;
+}
+
+#testmony-container .testmony-box .testmony-msg {
+	background-color: #FFF;
+	color: #666;
+	border-radius: 10px;
+	padding: 20px;
+	width: 50%;
+	position: relative;
+	margin: 35px auto;
+	font-style: italic;
+}
+
+.testmony-msg:after {
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #FFF;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testmony-box img {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #CCC;
+	border-radius: 50%;
+}
+
+.testmony-name {
+	font-weight: bold;
+}
+
+/* blog container */
+#blog-container {
+	text-align: center;
+	padding: 5em 0;
+}
+
+#blog-container .p-center {
+	margin-bottom: 60px;
+}
+
+.article-box {
+	display: inline-block;
+	width: 31%;
+	padding: 0 1%;
+	text-align: left;
+}
+
+.article-box img {
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.article-box h4 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.article-box h4 a {
+	text-decoration: none;
+	color: #666;
+}
+
+.article-date {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.article-resume {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.article-btn {
+	background-color: #3381f3;
+	border-color: #3381f3;
+	color: #FFF;
+}
+
+.article-btn:hover {
+	background-color: #FFF;
+	color: #3381f3;
+}
+
+/* footer */
+footer {
+	background-color: #666;
+	padding: 5em 0;
+	padding-bottom: 40px;
+	border-top: 5px solid #3381f3;
+}
+
+footer h2, footer p, footer a, footer span {
+	color: #D1D1D1;
+}
+
+footer h2 {
+	font-weight: 400;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer li {
+	list-style: none;
+}
+
+.footer-box {
+	display: inline-block;
+	width: 31%;
+	padding: 1%;
+	float: left;
+}
+
+footer .wrapper:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.company-footer {
+	width: 80%;
+}
+
+.company-footer h2 {
+	margin-top: 20px;
+}
+
+.company-footer h2, .company-footer p {
+	margin-bottom: 20px;
+}
+
+.footer-list li {
+	margin-bottom: 15px;
+}
+
+.footer-list a {
+	transition: 0.5s;
+}
+
+.footer-list a:hover {
+	color: #FFF;
+}
+
+.footer-list li:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.articles-footer {
+	width: 80%;
+}
+
+.footer-list.footer-article-list span {
+	display: block;
+	float: none;
+}
+
+.fab {
+	font-size: 30px;
+	margin-right: 10px;
+	float: left;
+}
+
+.footer-list li span {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.footer-bottom {
+	border-top: 1px solid #B2B2B2;
+}
+
+.footer-bottom p {
+	font-weight: 600;
+	margin-top: 40px;
+}
