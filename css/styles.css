@@ -519,7 +519,6 @@ footer li {
 }
 
 .footer-box {
-	display: inline-block;
 	width: 31%;
 	padding: 1%;
 	float: left;
@@ -589,4 +588,43 @@ footer .wrapper:after {
 .footer-bottom p {
 	font-weight: 600;
 	margin-top: 40px;
+}
+
+/* responsive */
+@media screen and (max-width: 960px) {
+	#logo {
+		position: absolute;
+		left: 50px;
+	}
+
+	.nav-container ul {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav-container ul li {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	#search-form form {
+		width: 60%;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#search-form form input, #search-form select {
+		display: block;
+		margin: 0;
+		margin-bottom: 25px;
+		width: 100%;
+		border-width: 0;
+		padding: 10px 20px;
+	}
 }
