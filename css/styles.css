@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5, p, span {
 .container {
 	max-width: 1920px;
 	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* hide on desktop */
+.btn-menumobile {
+	display: none;
 }
 
 /* header */
@@ -29,6 +37,7 @@ header {
 nav {
 	position: fixed;
 	top: 0;
+	left: 0;
 	height: 100px;
 	width: 100%;
 	z-index: 1;
@@ -591,7 +600,7 @@ footer .wrapper:after {
 }
 
 /* responsive */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
 	#logo {
 		position: absolute;
 		left: 50px;
@@ -612,6 +621,11 @@ footer .wrapper:after {
 		margin: 0 10px;
 	}
 
+	#search-form {
+		padding-top: 25em;
+		padding-bottom: 5em;
+	}
+
 	#search-form form {
 		width: 60%;
 		position: relative;
@@ -626,5 +640,205 @@ footer .wrapper:after {
 		width: 100%;
 		border-width: 0;
 		padding: 10px 20px;
+		box-sizing: border-box;
+	}
+
+	#lastjobs-container.wrapper, #status-container.wrapper, #lastjobs-container.wrapper, #blog-container.wrapper, .wrapper {
+		max-width: 960px;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.company-box {
+		width: 46%;
+		padding-left: 1em;
+	}
+
+	.company-box .company-info h3 {
+		font-size: 1em;
+	}
+
+	.company-box .company-info p {
+		font-size: .8em;
+	}
+
+	.locality i, .locality p {
+		font-size: .8em;
+	}
+
+	.job-type {
+		right: 1em;
+	}
+
+	.job-type span {
+		font-size: .8em;
+	}
+
+	#sendjobs-inner h2, #sendjobs-inner p {
+		text-shadow: .5px .5px #000;
+	}
+
+	.status-box {
+		width: 49.4%;
+		border: none;
+	}
+
+	.status-box:nth-child(1), .status-box:nth-child(3) {
+		border-right: 1px solid #DDD;
+	}
+
+	.testmony-box {
+		width: 49.4%;
+	}
+
+	.article-box {
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 3em;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+
+	html, body {
+	  overflow-x:hidden 
+	} 
+
+	nav {
+		height: 4em;
+	}
+
+	#logo {
+		left: 2em;
+		height: 2em;
+		width: 2em;
+		margin-top: 1em;
+	}
+
+	.btn-menumobile {
+		display: block;
+		font-size: 1.75em;
+		color: #CCC;
+		position: absolute;
+		right: 1.5em;
+		top: .75em;
+	}
+
+	.nav-container ul {
+		position: relative;
+		top: 4em;
+		height: 3em;
+		line-height: 3em;
+		display: none;
+	}
+
+	.nav-container ul li {
+		display: block;
+		background-color: #FFF;
+		margin: 0;
+		border-top: 1px solid #CCC;
+	}
+
+	.nav-container ul li a {
+		font-size: 1em;
+	}
+
+	.open {
+		display: block !important;
+	}
+
+	#main-banner {
+		margin-top: 4em;
+	}
+
+	#search-form {
+		padding-top: 15em;
+		padding-bottom: 5em;
+		width: 90%;
+	}
+
+	#search-form h1 {
+		font-size: 1.6em;
+	}
+
+	#search-form p {
+		font-size: 1em;
+		margin-bottom: 2em;
+	}
+
+	#search-form form {
+		width: 80%;
+	}
+
+	#search-form input[type=submit] {
+		margin-bottom: 0;
+	}
+
+	#lastjobs-container {
+		padding: 5em 0;
+	}
+
+	.locality {
+		display: none;
+	}
+
+	.company-box .company-info {
+		margin-top: 1em;
+		margin-left: 1em;
+		width: 8em;
+	}
+
+	.company-box .company-info h3 {
+		font-size: .8em;
+	}
+
+	.job-type {
+		width: 22%;
+	}
+
+	#sendjobs-container {
+	    background-position: 35% 0;
+	    padding: 10em 0;
+	}
+
+	#sendjobs-container h2 {
+		font-size: 1.5em;
+		width: 100%;
+	}
+
+	#sendjobs-container p {
+		font-size: 1em;
+		width: 100%;
+	}
+
+	.status-box {
+		margin-top: 3em; 
+		width: 100%;
+	}
+
+	.status-box:nth-child(1), .status-box:nth-child(3) {
+		border: none;
+	}
+
+	#testmony-container {
+		padding: 5em 0;
+	}
+
+	.testmony-box {
+		width: 100%;
+	}
+
+	#testmony-container p {
+		margin-bottom: 1em;
+	}
+
+	.footer-box {
+		display: block;
+		width: 100%;
 	}
 }
