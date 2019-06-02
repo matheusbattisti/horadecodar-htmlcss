@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 /* hide on desktop */
-.btn-menumobile {
+.nav-container .btn-menumobile {
 	display: none;
 }
 
@@ -597,6 +597,57 @@ footer .wrapper:after {
 .footer-bottom p {
 	font-weight: 600;
 	margin-top: 40px;
+}
+
+/* find jobs page */
+#findjobs #search-form {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width: 100%;
+	background-color: #3381f3;
+}
+
+#findjobs #lastjobs-container {
+	margin-top: 3em;
+}
+
+#search-form input, #search-form select {
+	width: 20%;
+}
+
+#findjobs #search-form input[type=submit] {
+	background-color: #FFF;
+	color: #3381f3;
+}
+
+#findjobs #lastjobs-container ul {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-top: 0;
+}
+
+#findjobs #type-filter ul {
+	margin: 0;
+	border-radius: 0;
+	border: none;
+	background-color: #FFF;
+}
+
+#findjobs #type-filter ul li {
+	display: inline-block;
+	width: 20%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: none;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+
+#findjobs #type-filter label {
+	text-transform: uppercase;
+	color: #666;
+	font-weight: bold;
+	margin-left: 5px;
 }
 
 /* responsive */
