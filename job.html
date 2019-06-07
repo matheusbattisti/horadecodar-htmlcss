@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container" id="sendjobs">
+	<div class="container" id="jobpage">
 		<header>
 			<nav>
 				<div class="nav-container">
@@ -25,39 +25,83 @@
 				</div>
 			</nav>
 		</header>
-		<main id="job-container" class="wrapper">
-      <h1>Resumo da vaga</h1>
-      <p>imagem</p>
-    </main>
-    <aside id="companyinfo-container">
-      <img src="img/googlelogo.png" alt="Google logo">
-      <div class="job-type">
-        <span class="clt">CLT</span>
-      </div>
-      <a href="#">Candidatar-se</a>
-      <div class="companysocial-container">
-        <ul class="footer-list">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-square"></i>
-              <span>Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-              <span>Linkedin</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
+		<div id="job-header">
+			<h1>Developer</h1>
+			<div id="job-info">
+				<div class="job-type">
+				  <span class="clt">CLT</span>
+				</div>
+				<div class="locality">
+					<i class="fas fa-map-marker-alt"></i>
+					<p>Mountain View, California</p>
+				</div>
+				<div class="date">
+					<i class="far fa-calendar-alt"></i>
+					<p>Enviada há 3 dias</p>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<main id="job-container">
+			    <div id="about-company-contaienr">
+			    	<h2 class="page-title">Sobre a empresa</h1>
+			    	<img src="img/company.jpg" id="company-img" alt="Como é o Google">
+			    	<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lectus vel lectus aliquet tristique. Morbi interdum odio eget tellus mattis malesuada. Proin tempus magna ac lorem elementum efficitur. Aenean vitae elit ullamcorper, pharetra nisl sed, tempor nibh. Suspendisse feugiat nisl eu metus molestie, ac vulputate lorem finibus.</p>
+			    </div>
+			    <div id="about-job-container">
+			    	<h2 class="page-title">Sobre a vaga</h2>
+			    	<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lectus vel lectus aliquet tristique. Morbi interdum odio eget tellus mattis malesuada. Proin tempus magna ac lorem elementum efficitur. Aenean vitae elit ullamcorper, pharetra nisl sed, tempor nibh. Suspendisse feugiat nisl eu metus molestie, ac vulputate lorem finibus.</p>
+			    </div>
+			    <div id="min-requirements-container">
+			    	<h2 class="page-title">Requisitos mínimos da vaga</h2>
+			    	<ul class="jobpage-list">
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    	</ul>
+			    </div>
+			    <div id="job-benefits-container">
+			    	<h2 class="page-title">Benefícios</h2>
+			    	<ul class="jobpage-list">
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    		<li>Lorem ipsum dolor sit amet</li>
+			    	</ul>
+			    </div>
+		    </main>
+
+		    <aside id="companyinfo-container">
+		      <img src="img/googlelogo.png" alt="Google logo">
+		      <div class="job-type">
+		        <span class="clt">CLT</span>
+		      </div>
+		      <a id="apply-btn" href="#">Candidatar-se</a>
+		      <div class="companysocial-container">
+		        <ul id="job-social-list">
+		          <li>
+		            <a href="#">
+		              <i class="fab fa-facebook-square"></i>
+		              <span>Facebook</span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#">
+		              <i class="fab fa-instagram"></i>
+		              <span>Instagram</span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#">
+		              <i class="fab fa-linkedin"></i>
+		              <span>Linkedin</span>
+		            </a>
+		          </li>
+		        </ul>
+		      </div>
+		    </aside>
+		</div>
 		<footer>
 			<div class="wrapper">
 				<div class="footer-box">
