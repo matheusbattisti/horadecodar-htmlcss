@@ -1013,6 +1013,10 @@ footer .wrapper:after {
 
 @media screen and (max-width: 576px) {
 
+	.nav-container .btn-menumobile {
+		display: block !important;
+	}
+
 	html, body {
 	  overflow-x:hidden 
 	} 
@@ -1193,6 +1197,14 @@ footer .wrapper:after {
 
 	#job-header #job-info .job-type {
 	    padding-top: 35px;
+	}
+
+	#companyinfo-container .job-type {
+		right: 0;
+	}
+
+	#apply-btn {
+		margin-bottom: 3em;
 	}
 
 }
